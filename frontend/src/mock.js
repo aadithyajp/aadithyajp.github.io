@@ -114,8 +114,14 @@ export const portfolioData = {
     {
       role: "Product Associate",
       company: "Clarity Travel Technology Solutions",
-      period: "Mar 2023 – Jul 2025",
-      description: "Led product initiatives across airline API integrations, payment gateway aggregator platform, and GDS enhancements. Owned NDC API integrations for Air India, Emirates, Etihad, and British Airways ensuring IATA schema compliance. Delivered payment orchestration platform improving transaction success by 60% and reducing failures by 99%. Implemented sprint capacity planning, MoSCoW prioritization, and drove UI/UX improvements."
+      period: "Mar 2025 – Jul 2025 · 5 mos",
+      description: "Led product initiatives across airline API integrations, payment gateway aggregator platform, and GDS enhancements. Owned NDC API integrations ensuring IATA schema compliance. Delivered payment orchestration platform improving transaction success by 60% and reducing failures by 99%."
+    },
+    {
+      role: "Junior Product Associate",
+      company: "Clarity Travel Technology Solutions",
+      period: "Mar 2023 – Mar 2025 · 2 yrs 1 mo",
+      description: "Drove product development for airline API integrations (Air India, Emirates, Etihad, British Airways) and GDS platform enhancements. Implemented sprint capacity planning, MoSCoW prioritization, and market analysis to enhance velocity and roadmap alignment. Led UI/UX improvements and cross-functional stakeholder collaboration."
     }
   ],
 
