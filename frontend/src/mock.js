@@ -29,19 +29,19 @@ export const portfolioData = {
     strengths: [
       {
         title: "Complex systems, clear outcomes",
-        description: "I specialize in products where the technical architecture is intricate—DevOps pipelines, payment flows, NDC integrations—and the business can't afford ambiguity."
+        description: "I specialise in products where the architecture is intricate — DevOps pipelines, payment orchestration, NDC integrations, SCM migrations — and where the business cannot afford ambiguity. I use AI to surface patterns faster and reduce the time between problem and decision."
       },
       {
         title: "Cross-domain fluency",
-        description: "Travel-tech, cloud modernization, repository migration, professional services. I learn fast and connect dots across industries that others treat as separate worlds."
+        description: "Travel-tech, cloud modernisation, repository migration, payments, professional services. I learn fast, connect dots across industries, and use AI tools to compress research and discovery cycles — so I spend more time on decisions, less on information gathering."
       },
       {
-        title: "Decisions backed by data",
-        description: "With a background in data science and analytics, I don't guess at priorities. I build the evidence, validate assumptions, then move."
+        title: "Decisions backed by data and AI",
+        description: "With a foundation in data science and analytics, I build the evidence before I commit to a direction. I use AI to validate assumptions, detect patterns in usage data, and prioritise with confidence"
       },
       {
         title: "Growth-minded communication",
-        description: "Digital marketing and audience strategy aren't side skills—they're how I drive adoption, align stakeholders, and make products people actually use."
+        description: "Clear communication is how products get adopted. I use plain language, structured artifacts, and AI-assisted content to align stakeholders, explain complex decisions, and drive real usage — not just feature launches."
       }
     ]
   },
