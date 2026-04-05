@@ -158,6 +158,69 @@ const Portfolio = () => {
             <div className="case-grid">
               {portfolioData.caseStudies.map((caseStudy, idx) => (
                 <Card key={idx} className="case-card">
+                  <p className="case-category">{caseStudy.category}</p>
+                  <h3 className="case-headline">{caseStudy.headline}</h3>
+                  <p className="case-intro">{caseStudy.intro}</p>
+                  
+                  <button 
+                    className="details-toggle"
+                    onClick={(e) => {
+                      const detailsSection = e.currentTarget.nextElementSibling;
+                      const isExpanded = detailsSection.classList.contains('expanded');
+                      detailsSection.classList.toggle('expanded');
+                      e.currentTarget.textContent = isExpanded ? 'View details ↓' : 'Close details ↑';
+                    }}
+                  >
+                    View details ↓
+                  </button>
+
+                  <div className="case-details">
+                    <div className="detail-section">
+                      <h4 className="detail-heading">CONTEXT</h4>
+                      <p>{caseStudy.details.context}</p>
+                    </div>
+
+                    <div className="detail-section">
+                      <h4 className="detail-heading">USER NEED</h4>
+                      <p>{caseStudy.details.userNeed}</p>
+                    </div>
+
+                    <div className="detail-section">
+                      <h4 className="detail-heading">CONSTRAINTS</h4>
+                      <p>{caseStudy.details.constraints}</p>
+                    </div>
+
+                    <div className="detail-section">
+                      <h4 className="detail-heading">OPTIONS CONSIDERED</h4>
+                      <p>{caseStudy.details.optionsConsidered}</p>
+                    </div>
+
+                    <div className="detail-section">
+                      <h4 className="detail-heading">TRADE-OFFS</h4>
+                      <p>{caseStudy.details.tradeOffs}</p>
+                    </div>
+
+                    <div className="detail-section">
+                      <h4 className="detail-heading">DECISION</h4>
+                      <p>{caseStudy.details.decision}</p>
+                    </div>
+
+                    <div className="detail-section">
+                      <h4 className="detail-heading">EXECUTION</h4>
+                      <p>{caseStudy.details.execution}</p>
+                    </div>
+
+                    <div className="detail-section">
+                      <h4 className="detail-heading">OUTCOME</h4>
+                      <p>{caseStudy.details.outcome}</p>
+                    </div>
+
+                    <div className="detail-section">
+                      <h4 className="detail-heading">LESSON LEARNED</h4>
+                      <p>{caseStudy.details.lessonLearned}</p>
+                    </div>
+                  </div>
+
                   <div className="case-meta">
                     <span>{caseStudy.client}</span>
                     <span className="meta-separator">•</span>
@@ -165,13 +228,7 @@ const Portfolio = () => {
                     <span className="meta-separator">•</span>
                     <span className="status-badge">{caseStudy.status}</span>
                   </div>
-                  <h3 className="case-title">{caseStudy.title}</h3>
-                  <p className="case-desc">{caseStudy.description}</p>
-                  <ul className="impact-list">
-                    {caseStudy.impacts.map((impact, impactIdx) => (
-                      <li key={impactIdx}>{impact}</li>
-                    ))}
-                  </ul>
+
                   <div className="tag-list">
                     {caseStudy.tags.map((tag, tagIdx) => (
                       <Badge key={tagIdx} variant="outline">{tag}</Badge>

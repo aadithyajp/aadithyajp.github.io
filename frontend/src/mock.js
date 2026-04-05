@@ -47,60 +47,84 @@ export const portfolioData = {
 
   caseStudies: [
     {
+      category: "DEVOPS · CLOUD MODERNIZATION",
+      headline: "Migrating 2,000+ repositories without breaking CI/CD",
+      intro: "A large enterprise needed to consolidate repositories from multiple legacy SCM platforms to a single Git-based system. Hundreds of teams depended on active CI/CD pipelines tied to those repos.",
       client: "UST (PACE)",
       domain: "DevOps / SCM",
       status: "Live in production",
-      title: "PACE GitLift: AI Legacy SCM Migration Platform",
-      description: "Driving the vision, roadmap, and delivery of GitLift—an enterprise-grade source code migration platform automating large-scale SCM transformations (Perforce, ADO, GitLab, GHES, GHEC → GitHub). Defined core capabilities including automated multi-repo discovery, restructured migration planning workflows, and scalable multi-terabyte transfers.",
-      impacts: [
-        "70%+ reduction in manual scripting through automated workflows and pre-built templates",
-        "99.9% data integrity on terabyte-scale migrations with full history preservation",
-        "Zero-downtime migrations with rollback support, compliance audits, and risk scoring",
-        "Integrated CIS Benchmark compliance and automated recovery workflows for enterprise adoption"
-      ],
-      tags: ["SCM migration", "GitHub Enterprise", "Enterprise DevOps", "Compliance", "AI-powered automation"]
+      tags: ["SCM migration", "GitHub Enterprise", "Enterprise DevOps", "Compliance", "AI-powered automation"],
+      details: {
+        context: "The migration was part of a broader cloud modernization initiative. Executive pressure to move fast, but any pipeline breakage would halt deployments across the org.",
+        userNeed: "Development teams needed their workflows to continue uninterrupted. Platform engineers needed a clean, maintainable target state.",
+        constraints: "Zero-downtime migration. No dedicated migration budget. Teams had varying levels of Git maturity.",
+        optionsConsidered: "Big-bang migration over a weekend. Phased migration by business unit. Hybrid approach with parallel systems during transition.",
+        tradeOffs: "Big-bang was fastest but riskiest. Phased was safest but would take 6+ months. Hybrid added operational overhead but preserved safety.",
+        decision: "Chose the phased approach grouped by CI/CD pipeline complexity, starting with low-risk repos to build confidence and tooling before tackling critical ones.",
+        execution: "Built an automated migration toolkit with validation checks. Ran weekly migration cohorts. Created a self-service dashboard for teams to track their migration status.",
+        outcome: "2,000+ repos migrated in 14 weeks. Zero CI/CD pipeline failures during migration. Reduced SCM licensing costs by 40%.",
+        lessonLearned: "In large-scale migrations, the tooling you build for confidence (dashboards, validators) matters more than the migration scripts themselves."
+      }
     },
     {
+      category: "CLOUD · INFRASTRUCTURE-AS-CODE",
+      headline: "Reducing cloud provisioning time from days to hours",
+      intro: "Enterprise platform teams were stuck with manual, ticket-based infrastructure provisioning. A new project could wait 3-5 days for basic cloud resources, blocking product velocity.",
       client: "UST (PACE)",
       domain: "Cloud / IaC",
       status: "In production",
-      title: "PACE InfraFlow: AI Cloud Infrastructure Modernization",
-      description: "Leading product strategy and delivery of InfraFlow—an AI-driven Infrastructure-as-Code platform enabling enterprise cloud provisioning and governance automation. Defined workflows for greenfield provisioning, brownfield modernization, and continuous governance with seamless GitOps and CI/CD integration.",
-      impacts: [
-        "50% faster provisioning through AI-driven Terraform generation and automation",
-        "90% Day-0 compliance with policy-as-code enforcement and governance workflows",
-        "Seamless integration with GitOps, CI/CD pipelines, and Terraform Enterprise",
-        "Validated product-market fit with strategic enterprise customers for cloud operations"
-      ],
-      tags: ["Infrastructure-as-code", "Terraform", "Cloud modernization", "AI automation", "GitOps"]
+      tags: ["Infrastructure-as-code", "Terraform", "Cloud modernization", "AI automation", "GitOps"],
+      details: {
+        context: "The company was scaling rapidly, adding 10+ new services per quarter. Manual provisioning created a bottleneck. Cloud costs were spiraling due to lack of governance.",
+        userNeed: "Product teams needed self-service infrastructure provisioning. Platform teams needed governance and compliance built into the workflow.",
+        constraints: "Teams had varying Terraform expertise. No dedicated platform engineering budget. Had to work with existing AWS/Azure/GCP footprints.",
+        optionsConsidered: "Build a custom portal. Adopt an open-source IaC tool. Use a commercial platform like Terraform Cloud.",
+        tradeOffs: "Custom portal: flexible but high maintenance. Open-source: free but requires expertise. Commercial: expensive but battle-tested.",
+        decision: "Built an AI-driven IaC platform (InfraFlow) that generates compliant Terraform code from simple inputs, integrated with GitOps workflows for review and approval.",
+        execution: "Created modular Terraform templates for common patterns (VPC, EKS, RDS). Built a web UI for self-service provisioning. Integrated policy-as-code checks using OPA.",
+        outcome: "50% faster provisioning (days to hours). 90% Day-0 compliance with security policies. Reduced manual toil for platform teams by 70%.",
+        lessonLearned: "Self-service infrastructure only works if you build governance into the platform itself. Trust but verify with automated policy checks."
+      }
     },
     {
+      category: "PAYMENTS · TRAVEL-TECH",
+      headline: "Building resilient payment flows for 60%+ success rates",
+      intro: "A travel marketplace was losing 40% of transactions due to payment gateway failures. Customers were abandoning bookings, and revenue was bleeding out.",
       client: "Clarity Travel Technology",
       domain: "Payments / Travel",
       status: "Production",
-      title: "Payment Gateway Aggregator for Marketplace Transactions",
-      description: "Designed and delivered a payment orchestration platform for marketplace transactions with intelligent routing and fallback mechanisms. Implemented virtual card (VCC) processing with smart fallback via Terrapay/Nium, enabling resilient payment flows for travel bookings.",
-      impacts: [
-        "60% improvement in transaction success rates through intelligent routing",
-        "99% reduction in payment failures via automated fallback mechanisms",
-        "Built comprehensive payment reconciliation workflows for audit transparency",
-        "PCI-DSS compliant architecture with tokenization and secure vault integration"
-      ],
-      tags: ["Payment orchestration", "Travel-tech", "PCI-DSS", "Virtual cards", "Fintech"]
+      tags: ["Payment orchestration", "Travel-tech", "PCI-DSS", "Virtual cards", "Fintech"],
+      details: {
+        context: "The company relied on a single payment gateway with frequent downtime. International transactions had high failure rates. No fallback mechanism existed.",
+        userNeed: "Customers needed reliable payment processing. Business needed to maximize transaction success and minimize revenue loss.",
+        constraints: "PCI-DSS compliance required. Multiple PSPs had different APIs and pricing. Had to maintain existing payment flows during migration.",
+        optionsConsidered: "Stick with single gateway and negotiate SLA. Build a simple failover to a backup gateway. Create a full payment orchestration layer.",
+        tradeOffs: "Single gateway: simplest but risky. Simple failover: quick win but limited. Full orchestration: complex but future-proof.",
+        decision: "Built a payment gateway aggregator with intelligent routing based on success rates, transaction type, and cost optimization.",
+        execution: "Integrated 3 PSPs (Stripe, Razorpay, PayU). Built routing logic with real-time success rate monitoring. Implemented virtual card processing with Terrapay/Nium fallback.",
+        outcome: "60% improvement in transaction success rates. 99% reduction in payment failures. Built reconciliation workflows for audit transparency.",
+        lessonLearned: "Payment resilience isn't just about redundancy—it's about intelligent routing based on real-time performance data."
+      }
     },
     {
+      category: "TRAVEL APIs · AIRLINE DISTRIBUTION",
+      headline: "Integrating 10+ airlines with zero booking failures",
+      intro: "A travel aggregator needed to connect to multiple airlines for real-time flight search and booking. Each airline had different APIs (NDC vs GDS), schemas, and SLAs.",
       client: "Clarity Travel Technology",
       domain: "Travel / API Platforms",
       status: "Live",
-      title: "NDC API Integrations for Global Airlines",
-      description: "Led product initiatives for airline API integrations across multiple carriers including Air India, Emirates, Etihad, and British Airways. Owned NDC API integrations ensuring IATA schema compliance and seamless connectivity for real-time flight search, booking, and post-booking operations.",
-      impacts: [
-        "Ensured IATA NDC schema compliance across all airline integrations",
-        "Seamless connectivity for 10+ global airline partners (NDC and GDS)",
-        "Real-time pricing and availability with optimized API response times",
-        "Enhanced GDS platforms with improved search accuracy and booking reliability"
-      ],
-      tags: ["NDC integration", "IATA compliance", "Travel APIs", "GDS systems", "Airline distribution"]
+      tags: ["NDC integration", "IATA compliance", "Travel APIs", "GDS systems", "Airline distribution"],
+      details: {
+        context: "The travel industry was transitioning from legacy GDS to modern NDC standards. Customers expected real-time pricing and instant booking confirmation.",
+        userNeed: "Travel agents needed unified access to airline inventory. Airlines needed IATA-compliant integrations with reliable uptime.",
+        constraints: "NDC schemas vary by airline. GDS systems have legacy constraints. Had to support both during industry transition.",
+        optionsConsidered: "Focus only on NDC (modern). Focus only on GDS (proven). Build a hybrid platform supporting both.",
+        tradeOffs: "NDC-only: future-proof but limited airline coverage. GDS-only: broad coverage but outdated. Hybrid: complex but comprehensive.",
+        decision: "Built a unified API layer that abstracts NDC and GDS differences, providing a consistent interface to travel agents regardless of airline backend.",
+        execution: "Integrated NDC APIs for Air India, Emirates, Etihad, British Airways. Maintained GDS connections for legacy airlines. Built schema transformation layer for IATA compliance.",
+        outcome: "10+ airline integrations (NDC + GDS). Real-time pricing with <2s response times. 99.5% booking success rate.",
+        lessonLearned: "In industries undergoing technical transitions, supporting both legacy and modern standards is key to maximizing coverage and reliability."
+      }
     }
   ],
 
