@@ -2,9 +2,9 @@
 export const portfolioData = {
   personal: {
     name: "Aadithya Julius Prince",
-    role: "Product owner • platforms • devops",
-    tagline: "I convert ambiguous problems into platform products people use every day.",
-    summary: "I'm an outcome-driven product owner with 3+ years of experience leading end-to-end product lifecycle management across enterprise DevOps, travel-tech, and payment platforms. I build products that solve real scaling problems—with outcomes you can measure.",
+    role: "PRODUCT OWNER · PAYMENTS · PLATFORMS · DEVOPS",
+    tagline: "I convert ambiguous business problems into platform products teams rely on every day.",
+    summary: "I'm a product owner with 3+ years building DevOps, travel-tech, and payment platforms. I focus on real workflow pain—using data and AI where it helps—and deliver products with outcomes you can measure.",
     email: "aadithyajp26@gmail.com",
     phone: "+91 9384184215",
     location: "Chennai, India",
