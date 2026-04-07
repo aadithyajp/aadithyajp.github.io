@@ -25,7 +25,7 @@ export const portfolioData = {
 
   whyMe: {
     title: "I don't just manage products. I own outcomes.",
-    subtitle: "Most product managers can run a sprint. I take ownership of the entire problem space—from stakeholder alignment and trade-off analysis to execution and measurable results.",
+    subtitle: "Most product managers can run a sprint. I take ownership of the entire problem space — from discovery and stakeholder alignment, to AI-assisted execution and results you can measure.",
     strengths: [
       {
         title: "Complex systems, clear outcomes",
