@@ -184,22 +184,22 @@ export const portfolioData = {
 
   experience: [
     {
-      role: "Associate II - Business Analysis",
+      role: "Associate II – Business Analysis",
       company: "UST (PACE)",
       period: "Jul 2025 – Present",
-      description: "Leading product strategy and delivery for PACE GitLift (AI-powered SCM migration platform) and PACE InfraFlow (AI-driven IaC platform). Driving vision, roadmap execution, and cross-functional collaboration for enterprise DevOps and cloud modernization products. Delivered measurable outcomes: 70%+ reduction in manual scripting, 50% faster provisioning, and 90% Day-0 compliance."
+      description: "Leading product strategy and delivery for PACE GitLift — an AI-powered SCM migration platform — and PACE InfraFlow, a self-service IaC provisioning platform. Driving product vision, roadmap execution, and cross-functional collaboration for enterprise DevOps and cloud modernisation products. Key outcomes: 70%+ reduction in manual scripting, 50% faster infrastructure provisioning, and 90% Day-0 compliance."
     },
     {
       role: "Product Associate",
       company: "Clarity Travel Technology Solutions",
       period: "Mar 2025 – Jul 2025 · 5 mos",
-      description: "Led product initiatives across airline API integrations, payment gateway aggregator platform, and GDS enhancements. Owned NDC API integrations ensuring IATA schema compliance. Delivered payment orchestration platform improving transaction success by 60% and reducing failures by 99%."
+      description: "Led product initiatives across airline NDC API integrations, payment gateway aggregator platform, and GDS enhancements. Owned IATA schema compliance across all airline integrations. Delivered a payment gateway and VCC orchestration platform — improving transaction success by 60% and reducing failures by 99% across 18+ payment gateways."
     },
     {
       role: "Junior Product Associate",
       company: "Clarity Travel Technology Solutions",
       period: "Mar 2023 – Mar 2025 · 2 yrs 1 mo",
-      description: "Drove product development for airline API integrations (Air India, Emirates, Etihad, British Airways) and GDS platform enhancements. Implemented sprint capacity planning, MoSCoW prioritization, and market analysis to enhance velocity and roadmap alignment. Led UI/UX improvements and cross-functional stakeholder collaboration."
+      description: "Drove product development for airline API integrations (Air India, Emirates, Etihad, British Airways) and the payment gateway aggregator platform. Implemented sprint capacity planning, MoSCoW prioritisation, and market analysis to improve velocity and roadmap alignment. Led end-to-end UI/UX versioning improvements and cross-functional stakeholder collaboration."
     }
   ],
 
