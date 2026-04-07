@@ -777,6 +777,26 @@ section {
   color: var(--color-primary);
 }
 
+.skill-portfolio-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: var(--space-md);
+  padding: var(--space-xs) var(--space-sm);
+  background: var(--color-accent);
+  border-radius: var(--radius-sm);
+  transition: all 0.2s ease;
+}
+
+.skill-portfolio-link:hover {
+  background: var(--color-primary);
+  color: var(--color-surface);
+  transform: translateX(4px);
+}
+
 .skill-list {
   list-style: none;
 }

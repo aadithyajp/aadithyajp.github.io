@@ -218,6 +218,10 @@ export const portfolioData = {
     },
     {
       category: "AI and analytics",
+      link: {
+        text: "View Data Science Portfolio",
+        url: "https://aadithyajp.github.io/Aadithyadatascientist.github.io/"
+      },
       skills: ["Data science foundation", "ML data modelling", "A/B testing and experimentation", "User analytics and dashboarding", "Python / Pandas for analysis", "Business intelligence", "AI-assisted product discovery", "AI workflow automation"]
     },
     {

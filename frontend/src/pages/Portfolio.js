@@ -313,6 +313,17 @@ const Portfolio = () => {
               {portfolioData.skills.map((skillBlock, idx) => (
                 <Card key={idx} className="skill-block">
                   <h3 className="skill-category">{skillBlock.category}</h3>
+                  {skillBlock.link && (
+                    <a 
+                      href={skillBlock.link.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="skill-portfolio-link"
+                    >
+                      {skillBlock.link.text}
+                      <ExternalLink size={14} />
+                    </a>
+                  )}
                   <ul className="skill-list">
                     {skillBlock.skills.map((skill, skillIdx) => (
                       <li key={skillIdx}>{skill}</li>
