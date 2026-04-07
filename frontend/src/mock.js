@@ -162,22 +162,22 @@ export const portfolioData = {
     },
     {
       category: "TRAVEL APIs · AIRLINE DISTRIBUTION",
-      headline: "Integrating 10+ airlines with zero booking failures",
-      intro: "A travel aggregator needed to connect to multiple airlines for real-time flight search and booking. Each airline had different APIs (NDC vs GDS), schemas, and SLAs.",
+      headline: "Integrating 25+ airlines with zero booking failures",
+      intro: "A travel aggregator needed to connect to multiple airlines for real-time flight search and booking. Each airline had different APIs, IATA schemas, and SLAs — and airlines wanted to offer dynamic pricing with rich content to travellers.",
       client: "Clarity Travel Technology",
       domain: "Travel / API Platforms",
       status: "Live",
       tags: ["NDC integration", "IATA compliance", "Travel APIs", "GDS systems", "Airline distribution"],
       details: {
-        context: "The travel industry was transitioning from legacy GDS to modern NDC standards. Customers expected real-time pricing and instant booking confirmation.",
-        userNeed: "Travel agents needed unified access to airline inventory. Airlines needed IATA-compliant integrations with reliable uptime.",
-        constraints: "NDC schemas vary by airline. GDS systems have legacy constraints. Had to support both during industry transition.",
-        optionsConsidered: "Focus only on NDC (modern). Focus only on GDS (proven). Build a hybrid platform supporting both.",
-        tradeOffs: "NDC-only: future-proof but limited airline coverage. GDS-only: broad coverage but outdated. Hybrid: complex but comprehensive.",
-        decision: "Built a unified API layer that abstracts NDC and GDS differences, providing a consistent interface to travel agents regardless of airline backend.",
-        execution: "Integrated NDC APIs for Air India, Emirates, Etihad, British Airways. Maintained GDS connections for legacy airlines. Built schema transformation layer for IATA compliance.",
-        outcome: "10+ airline integrations (NDC + GDS). Real-time pricing with <2s response times. 99.5% booking success rate.",
-        lessonLearned: "In industries undergoing technical transitions, supporting both legacy and modern standards is key to maximizing coverage and reliability."
+        context: "The travel industry was shifting from legacy GDS to modern NDC standards. Customers expected real-time pricing and instant booking confirmation. Airlines wanted to move away from GDS to offer dynamic pricing and richer content directly to travel agents.",
+        userNeed: "Travel agents needed unified access to airline inventory across NDC and GDS. Airlines needed IATA-compliant integrations with reliable uptime and the ability to pass commissions and incentives to agencies.",
+        constraints: "NDC schemas vary significantly by airline. GDS systems carry legacy constraints and limited pricing flexibility. Both standards had to be supported simultaneously during the industry transition.",
+        optionsConsidered: "Focus only on NDC (modern standard). Focus only on GDS (proven coverage). Build a hybrid platform supporting both.",
+        tradeOffs: "NDC-only: future-proof but limited airline coverage during transition. GDS-only: broad coverage but outdated pricing and content. Hybrid: complex to build and maintain but the only option for full coverage and modern capability.",
+        decision: "Built a unified API layer that abstracts NDC and GDS differences, providing a consistent interface to travel agents regardless of airline backend — while also supporting airline-defined commission and incentive structures for agencies.",
+        execution: "Integrated NDC APIs for Air India, Emirates, Etihad, British Airways, and more. Maintained GDS connections for legacy airlines. Built a schema transformation layer for IATA compliance across all integrations.",
+        outcome: "25+ airline integrations across NDC and GDS. Real-time pricing with <2s response times. 99.5% booking success rate across all integrated airlines.",
+        lessonLearned: "In industries undergoing technical transitions, supporting both legacy and modern standards is the only way to maximise coverage, reliability, and airline adoption."
       }
     }
   ],
