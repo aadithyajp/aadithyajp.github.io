@@ -88,7 +88,7 @@ export const portfolioData = {
       },
       {
         title: "Execution clarity",
-        description: "I turn vague requirements into scoped milestones. Every feature is tied to a user pain point, every release has clear success metrics, and every sprint delivers proof.",
+        description: "I turn vague problem statements into scoped, delivery-ready work. I structure stories as vertical slices — each one delivering end-to-end value so teams ship working product every sprint, not just completed tasks. Every release has a clear success metric and proof of impact.",
         tags: ["User story mapping", "Metrics-driven roadmaps", "Sprint planning", "Stakeholder alignment"]
       },
       {
