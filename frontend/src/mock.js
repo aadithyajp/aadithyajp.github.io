@@ -141,23 +141,23 @@ export const portfolioData = {
       }
     },
     {
-      category: "PAYMENTS · TRAVEL-TECH",
+      category: "PAYMENTS · PAYMENT GATEWAY AGGREGATOR",
       headline: "Building resilient payment flows for 60%+ success rates",
-      intro: "A travel marketplace was losing 40% of transactions due to payment gateway failures. Customers were abandoning bookings, and revenue was bleeding out.",
+      intro: "A travel marketplace serving clients across multiple countries was losing transactions to payment gateway failures. Customers were abandoning bookings, and revenue was bleeding out — especially on cross-border and multi-currency purchases.",
       client: "Clarity Travel Technology",
       domain: "Payments / Travel",
       status: "Production",
-      tags: ["Payment orchestration", "Travel-tech", "PCI-DSS", "Virtual cards", "Fintech"],
+      tags: ["Payment orchestration", "Multi-currency", "Travel-tech", "PCI-DSS", "Virtual cards", "Fintech"],
       details: {
-        context: "The company relied on a single payment gateway with frequent downtime. International transactions had high failure rates. No fallback mechanism existed.",
-        userNeed: "Customers needed reliable payment processing. Business needed to maximize transaction success and minimize revenue loss.",
-        constraints: "PCI-DSS compliance required. Multiple PSPs had different APIs and pricing. Had to maintain existing payment flows during migration.",
-        optionsConsidered: "Stick with single gateway and negotiate SLA. Build a simple failover to a backup gateway. Create a full payment orchestration layer.",
-        tradeOffs: "Single gateway: simplest but risky. Simple failover: quick win but limited. Full orchestration: complex but future-proof.",
-        decision: "Built a payment gateway aggregator with intelligent routing based on success rates, transaction type, and cost optimization.",
-        execution: "Integrated 3 PSPs (Stripe, Razorpay, PayU). Built routing logic with real-time success rate monitoring. Implemented virtual card processing with Terrapay/Nium fallback.",
-        outcome: "60% improvement in transaction success rates. 99% reduction in payment failures. Built reconciliation workflows for audit transparency.",
-        lessonLearned: "Payment resilience isn't just about redundancy—it's about intelligent routing based on real-time performance data."
+        context: "The platform onboarded clients from different regions, each with customers purchasing in different currencies. A single payment gateway couldn't handle the volume, currency variety, or regional compliance needs — and frequent downtime made failures worse.",
+        userNeed: "Customers needed reliable payment processing regardless of currency or region. Business needed to maximise transaction success across all client accounts and minimise revenue loss.",
+        constraints: "PCI-DSS compliance required across all payment flows. Multiple PSPs had different APIs, pricing, and currency support. Existing payment flows had to stay live during migration.",
+        optionsConsidered: "Stick with a single gateway and negotiate SLA. Build a simple failover to a backup gateway. Create a full payment gateway aggregator platform.",
+        tradeOffs: "Single gateway: simplest but couldn't support multi-currency clients or handle regional failures. Simple failover: quick win but not flexible enough for currency-aware routing. Full aggregator: complex to build but the only future-proof option for multi-client, multi-currency scale.",
+        decision: "Built a payment gateway aggregator platform with intelligent routing based on transaction currency, client region, real-time success rates, and cost optimisation — with virtual card processing as a fallback layer.",
+        execution: "Integrated 18+ payment gateways, each covering different currencies and regional strengths. Built intelligent routing logic with real-time success rate monitoring. Implemented virtual card processing with fallback for edge cases. Built reconciliation workflows for full audit transparency.",
+        outcome: "60% improvement in transaction success rates. 99% reduction in payment failures. 18+ gateways live across multi-currency, multi-client payment flows with full reconciliation.",
+        lessonLearned: "Payment resilience isn't just redundancy — it's intelligent routing that accounts for currency, region, and real-time gateway performance."
       }
     },
     {
