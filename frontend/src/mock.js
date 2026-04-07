@@ -102,22 +102,22 @@ export const portfolioData = {
   caseStudies: [
     {
       category: "DEVOPS · CLOUD MODERNIZATION",
-      headline: "Migrating 2,000+ repositories without breaking CI/CD",
-      intro: "A large enterprise needed to consolidate repositories from multiple legacy SCM platforms to a single Git-based system. Hundreds of teams depended on active CI/CD pipelines tied to those repos.",
+      headline: "Migrating 4,000+ repositories within strict cutover windows",
+      intro: "A large enterprise needed to consolidate source code from multiple legacy SCM platforms to a single Git-based system. Teams across the org had active development workflows tied to those repos.",
       client: "UST (PACE)",
       domain: "DevOps / SCM",
       status: "Live in production",
       tags: ["SCM migration", "GitHub Enterprise", "Enterprise DevOps", "Compliance", "AI-powered automation"],
       details: {
-        context: "The migration was part of a broader cloud modernization initiative. Executive pressure to move fast, but any pipeline breakage would halt deployments across the org.",
-        userNeed: "Development teams needed their workflows to continue uninterrupted. Platform engineers needed a clean, maintainable target state.",
-        constraints: "Zero-downtime migration. No dedicated migration budget. Teams had varying levels of Git maturity.",
-        optionsConsidered: "Big-bang migration over a weekend. Phased migration by business unit. Hybrid approach with parallel systems during transition.",
-        tradeOffs: "Big-bang was fastest but riskiest. Phased was safest but would take 6+ months. Hybrid added operational overhead but preserved safety.",
-        decision: "Chose the phased approach grouped by CI/CD pipeline complexity, starting with low-risk repos to build confidence and tooling before tackling critical ones.",
-        execution: "Built an automated migration toolkit with validation checks. Ran weekly migration cohorts. Created a self-service dashboard for teams to track their migration status.",
-        outcome: "2,000+ repos migrated in 14 weeks. Zero CI/CD pipeline failures during migration. Reduced SCM licensing costs by 40%.",
-        lessonLearned: "In large-scale migrations, the tooling you build for confidence (dashboards, validators) matters more than the migration scripts themselves."
+        context: "The migration was part of a broader cloud modernisation initiative. Executive pressure to deliver within firm cutover dates, with repo complexity varying significantly across projects.",
+        userNeed: "Development teams needed source code and branch history preserved cleanly. Platform engineers needed a repeatable, low-risk process across hundreds of repositories.",
+        constraints: "Client environments had defined freeze windows for migrations. Repository complexity varied widely across teams and projects.",
+        optionsConsidered: "Big-bang migration over a weekend. Phased migration by repository complexity. Hybrid approach with one-way sync during transition.",
+        tradeOffs: "Big-bang was fastest but too risky given complexity variance. Phased was safest but needed delta migration planning. Hybrid reduced risk but added operational overhead.",
+        decision: "Chose phased migration sequenced by repository complexity, starting with simpler repos to validate tooling. Each phase included a delta migration pass before final cutover.",
+        execution: "Built an automated migration toolkit with validation checks. Ran migration cohorts tied to freeze windows. Created a self-service dashboard for teams to track status and flag issues.",
+        outcome: "4,000+ repos migrated in under 2 months. All deliveries within approved freeze windows with no source code loss. SCM licensing costs reduced by ~40%.",
+        lessonLearned: "In large-scale migrations, the tooling you build for confidence — dashboards, validators, delta checks — matters more than the migration scripts themselves."
       }
     },
     {
