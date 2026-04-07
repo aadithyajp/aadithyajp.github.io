@@ -52,27 +52,27 @@ export const portfolioData = {
       {
         number: "01",
         title: "Start with the constraint, not the feature",
-        description: "Every product decision exists inside a box of technical limits, business timelines, and user tolerance. I map the box first, then find the best move inside it."
+        description: "I map the technical limits, business timelines, and user tolerance before committing to a solution. The best product move is always the best move inside the real box — not an imaginary one."
       },
       {
         number: "02",
         title: "Make trade-offs explicit",
-        description: "I don't hide trade-offs behind optimistic roadmaps. If speed costs quality, or if we're choosing vendor lock-in for faster delivery, everyone knows upfront."
+        description: "I surface speed vs quality, vendor lock-in, scope cuts, and data risks upfront — so no one is surprised mid-sprint. If we're choosing convenience over control, everyone knows it going in."
       },
       {
         number: "03",
         title: "Ship to learn, not to launch",
-        description: "A release isn't a finish line. It's the fastest way to get real data on whether our assumptions hold. I optimize for learning velocity over feature count."
+        description: "A release is the fastest way to validate whether our assumptions hold. I use AI to compress discovery cycles and optimise for learning velocity — not just feature count."
       },
       {
         number: "04",
         title: "Own the problem, not just the backlog",
-        description: "I don't wait for requirements to arrive. I go to the source—users, data, support logs—and define the problem worth solving before writing a single ticket."
+        description: "I go to the source — users, logs, support data — before writing a single ticket. I use AI to surface patterns in usage data faster, so I'm solving the right problem, not just the loudest one."
       },
       {
         number: "05",
-        title: "Bridge the gap between technical and business",
-        description: "I speak both languages fluently. Engineers trust me because I understand system constraints. Executives trust me because I tie every decision to business outcomes."
+        title: "Use AI as leverage, not a shortcut",
+        description: "I use AI to accelerate discovery, draft artifacts, model scenarios, and detect patterns — but every decision, trade-off, and product narrative stays human and accountable."
       }
     ]
   },
