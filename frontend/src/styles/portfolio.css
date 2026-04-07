@@ -999,15 +999,17 @@ section {
 /* Badge/Tag Styling Improvements for Dark Mode */
 [data-theme='dark'] .tag-list .badge,
 [data-theme='dark'] [data-variant='outline'] {
-  background: var(--color-badge-bg, rgba(26, 156, 163, 0.15));
-  color: var(--color-badge-text, #1a9ca3);
-  border-color: var(--color-badge-border, rgba(26, 156, 163, 0.3));
+  background: rgba(26, 156, 163, 0.15);
+  color: #5dd4dc;
+  border: 1px solid rgba(93, 212, 220, 0.4);
+  font-weight: 500;
 }
 
 [data-theme='dark'] .tag-list .badge:hover,
 [data-theme='dark'] [data-variant='outline']:hover {
   background: rgba(26, 156, 163, 0.25);
-  border-color: rgba(26, 156, 163, 0.5);
+  color: #7fe3ea;
+  border-color: rgba(127, 227, 234, 0.6);
 }
 
 /* Ensure case meta text is readable in dark mode */
@@ -1016,6 +1018,7 @@ section {
 }
 
 [data-theme='dark'] .case-meta .status-badge {
-  background: rgba(26, 156, 163, 0.2);
-  color: #22b5bd;
+  background: rgba(26, 156, 163, 0.25);
+  color: #5dd4dc;
+  font-weight: 600;
 }
