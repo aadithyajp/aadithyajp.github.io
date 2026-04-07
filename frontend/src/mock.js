@@ -206,27 +206,27 @@ export const portfolioData = {
   skills: [
     {
       category: "Product craft",
-      skills: ["Product lifecycle management", "Roadmap prioritization", "User story mapping", "Backlog management", "Product discovery", "Go-to-market strategy", "Competitive analysis", "Product-market fit"]
+      skills: ["Product lifecycle management", "Roadmap prioritisation", "Vertical slice user story mapping", "Backlog management", "Product discovery", "Go-to-market strategy", "Competitive analysis", "Product-market fit"]
     },
     {
       category: "Systems and delivery",
-      skills: ["Agile / Scrum / Kanban", "Sprint capacity planning", "API-first design", "Platform architecture", "CI/CD workflows", "Cross-functional leadership", "Stakeholder management"]
+      skills: ["Agile / Scrum / Kanban", "Sprint capacity planning", "API-first design", "Platform architecture", "Cross-functional leadership", "Stakeholder management"]
     },
     {
       category: "Domain depth",
-      skills: ["DevOps tooling", "SCM migration (Git, Perforce, ADO)", "Infrastructure-as-code (Terraform)", "Payment systems (PSP, PCI-DSS)", "Travel APIs (NDC, GDS, IATA)", "Cloud modernization"]
+      skills: ["DevOps tooling", "SCM migration (Git, Perforce, ADO)", "Infrastructure-as-code (Terraform)", "Payment systems (PSP, PCI-DSS)", "Travel APIs (NDC, GDS, IATA)", "Cloud modernisation"]
+    },
+    {
+      category: "AI and analytics",
+      skills: ["Data science foundation", "ML data modelling", "A/B testing and experimentation", "User analytics and dashboarding", "Python / Pandas for analysis", "Business intelligence", "AI-assisted product discovery", "AI workflow automation"]
     },
     {
       category: "Technical skills",
-      skills: ["Figma (Wireframing & Prototyping)", "Postman & API testing", "System integration", "Data-driven decision making", "SQL & data modeling", "Digital & social media marketing"]
-    },
-    {
-      category: "Analytics background",
-      skills: ["Data science foundation", "A/B testing", "User analytics", "Dashboarding", "Python for analysis", "Business intelligence", "Metrics modeling"]
+      skills: ["Figma (Wireframing, Prototyping, Figma Make)", "Postman and API testing", "System integration", "Data-driven decision making", "Digital and social media marketing"]
     },
     {
       category: "Business contexts",
-      skills: ["B2B SaaS", "Enterprise sales cycles", "Technical buyer personas", "Compliance (SOC2, CIS Benchmark)", "Cloud economics", "ROI modeling", "Supplier & client management"]
+      skills: ["B2C", "B2B2B SaaS", "Self-service platforms", "Professional services", "Enterprise sales cycles", "Technical buyer personas", "Compliance and benchmarks", "Cloud economics", "Supplier and client management"]
     }
   ],
 
