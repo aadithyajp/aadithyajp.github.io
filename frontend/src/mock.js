@@ -52,37 +52,37 @@ export const portfolioData = {
       {
         number: "01",
         title: "Start with the job, not the feature",
-        description: "Before any roadmap or ticket, I map the job users are trying to get done — in problem space, not solution space. I use Outcome-Driven Innovation (ODI) to build a solution-agnostic job map focused on what users are trying to accomplish, not what tools they're using. This eliminates the need to pivot later because we solved the right problem first."
+        description: "Before any ticket or roadmap, I map what users are trying to accomplish — in problem space, not solution space. Using Outcome-Driven Innovation (ODI), I build a solution-agnostic job map that captures intent, not behaviour. This keeps discovery grounded in real goals and eliminates the need to pivot mid-execution."
       },
       {
         number: "02",
         title: "Start with the constraint, not the solution",
-        description: "I map the technical limits, business timelines, and user tolerance before committing to a solution. The best product move is always the best move inside the real box — not an imaginary one."
+        description: "I map technical limits, business timelines, and user tolerance before committing to a direction. The right product move is always the best move inside the real constraints — not an optimistic plan that ignores them."
       },
       {
         number: "03",
         title: "Make trade-offs explicit",
-        description: "I surface speed vs quality, vendor lock-in, scope cuts, and data risks upfront — so no one is surprised mid-sprint. If we're choosing convenience over control, everyone knows it going in."
+        description: "I surface speed vs quality, vendor lock-in, scope cuts, and compliance risks before the sprint starts — so no one is surprised mid-delivery. If we're choosing convenience over control, everyone knows it going in."
       },
       {
         number: "04",
-        title: "Ship to learn, not to launch",
-        description: "A release is the fastest way to validate whether our assumptions hold. I use AI to compress discovery cycles and optimise for learning velocity — not just feature count."
+        title: "Own the problem, not just the backlog",
+        description: "I go directly to users, logs, and usage data to find where they're failing to achieve their goals — not just what they're requesting. I map the gap, layer in competitive analysis to understand what the market has and hasn't solved, and apply those insights based on where my product stands today. The backlog reflects the problem worth solving — backed by user reality and competitive context."
       },
       {
         number: "05",
-        title: "Own the problem, not just the backlog",
-        description: "I go to the source — users, logs, support data — before writing a single ticket. I use AI to surface patterns in usage data faster, so I'm solving the right problem, not just the loudest one."
+        title: "Structure epics as capabilities, stories as vertical slices",
+        description: "I write epics as customer-deliverable capabilities — end-to-end, sprint-sized, and shippable to a user the moment they're complete. User stories go deeper — each one is a vertical slice covering all functional impact areas, independently testable by QA without waiting for other stories. Every sprint delivers working product, not just completed tasks."
       },
       {
         number: "06",
         title: "Use AI as leverage, not a shortcut",
-        description: "I use AI to accelerate discovery, draft artifacts, model scenarios, and detect patterns — but every decision, trade-off, and product narrative stays human and accountable."
+        description: "I use AI to move faster where it adds real value — drafting PRDs, surfacing patterns in usage data, generating IaC templates, modelling trade-off scenarios, and summarising feedback. But every prioritisation call, decision, and product narrative stays mine — explainable and accountable."
       },
       {
         number: "07",
-        title: "Structure epics as capabilities, stories as vertical slices",
-        description: "I treat epics as customer-deliverable capabilities — not feature buckets. A complete epic should be something I can ship directly to a customer: end-to-end, capability-oriented, and scoped to fit within a sprint. It covers the full product flow, not just a layer of it. User stories go one level deeper — each one is a vertical slice that covers all functional impact areas needed to implement that piece of behaviour end to end. A well-written user story isn't just a dev task — it's a complete, independently testable unit that QA can verify from input to outcome without waiting for other stories to be done. This way, every sprint delivers working product, not just completed tasks."
+        title: "Ship to learn, not to launch",
+        description: "A release is the starting point for real learning, not the finish line. After every sprint delivery, I close the loop — collect customer feedback, analyse what landed and what didn't, and feed those signals directly into the next sprint's priorities. Learning velocity drives roadmap evolution more than launch cadence."
       }
     ]
   },
