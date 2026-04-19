@@ -319,7 +319,7 @@ const Portfolio = () => {
           <div className="wide">
             <p className="kicker">Capability stack.</p>
             <h2 className="section-headline">What I bring across product environments.</h2>
-            <p className="section-lede">I don't just ship features—I bring a full stack of product, technical, and business capabilities. Here's what I work with:</p>
+            <p className="section-lede">A full stack of product, technical, and business capabilities — built across DevOps, travel-tech, payments, and cloud platforms.</p>
 
             <div className="skills-grid">
               {portfolioData.skills.map((skillBlock, idx) => (

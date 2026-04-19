@@ -296,15 +296,15 @@ export const portfolioData = {
   skills: [
     {
       category: "Product craft",
-      skills: ["Product lifecycle management", "Roadmap prioritisation", "Vertical slice user story mapping", "Backlog management", "Product discovery", "Go-to-market strategy", "Competitive analysis", "Product-market fit"]
+      skills: ["Jobs-to-be-done (JTBD) and ODI framework", "Customer discovery and willingness-to-pay validation", "POC scoping and validation", "Product lifecycle management", "Roadmap prioritisation and MoSCoW", "Capability-oriented epic writing", "Vertical slice user story mapping", "Backlog management", "Go-to-market strategy", "Competitive analysis", "Product-market fit"]
     },
     {
-      category: "Systems and delivery",
-      skills: ["Agile / Scrum / Kanban", "Sprint capacity planning", "API-first design", "Platform architecture", "Cross-functional leadership", "Stakeholder management"]
+      category: "Delivery and execution",
+      skills: ["Agile / Scrum / Kanban", "Sprint capacity planning", "PO acceptance checklist", "Release notes writing", "Product help doc and FAQ maintenance", "API-first design", "Platform architecture", "Cross-functional leadership", "Stakeholder management"]
     },
     {
       category: "Domain depth",
-      skills: ["DevOps tooling", "SCM migration (Git, Perforce, ADO)", "Infrastructure-as-code (Terraform)", "Payment systems (PSP, PCI-DSS)", "Travel APIs (NDC, GDS, IATA)", "Cloud modernisation"]
+      skills: ["DevOps tooling and SCM migration (Git, Perforce, ADO, Gerrit)", "Infrastructure-as-code (Terraform, multi-cloud)", "Payment systems (PSP, PCI-DSS, VCC, payment orchestration)", "Travel APIs (NDC, GDS, IATA)", "Cloud modernisation", "Enterprise B2B platform products"]
     },
     {
       category: "AI and analytics",
@@ -312,7 +312,7 @@ export const portfolioData = {
         text: "View Data Science Portfolio",
         url: "https://aadithyajp.github.io/Aadithyadatascientist.github.io/"
       },
-      skills: ["Data science foundation", "ML data modelling", "A/B testing and experimentation", "User analytics and dashboarding", "Python / Pandas for analysis", "Business intelligence", "AI-assisted product discovery", "AI workflow automation"]
+      skills: ["AI-assisted product discovery and PRD drafting", "AI workflow automation (IaC generation, feedback summarisation)", "Data science foundation", "ML data modelling", "A/B testing and experimentation", "User analytics and dashboarding", "Python / Pandas for analysis", "Business intelligence and metrics modelling"]
     },
     {
       category: "Technical skills",
@@ -320,7 +320,7 @@ export const portfolioData = {
     },
     {
       category: "Business contexts",
-      skills: ["B2C", "B2B2B SaaS", "Self-service platforms", "Professional services", "Enterprise sales cycles", "Technical buyer personas", "Compliance and benchmarks", "Cloud economics", "Supplier and client management"]
+      skills: ["B2C · B2B · B2B2B SaaS", "Self-service platforms", "Professional services", "Enterprise sales cycles", "Technical buyer personas", "Compliance and benchmarks (PCI-DSS, SOC2, IATA)", "Cloud economics and ROI modelling", "Product lifecycle expansion in client environments", "Supplier and client management"]
     }
   ],
 
