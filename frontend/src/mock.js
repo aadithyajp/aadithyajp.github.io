@@ -52,7 +52,17 @@ export const portfolioData = {
       {
         number: "01",
         title: "Start with the job, not the feature",
-        description: "Before any ticket or roadmap, I map what users are trying to accomplish — in problem space, not solution space. Using Outcome-Driven Innovation (ODI), I build a solution-agnostic job map that captures intent, not behaviour. Before committing to a POC, I get on a customer call to validate the problem and test willingness to pay. A confirmed job-to-be-done only becomes a POC when a customer signals they'd pay for the solution. This gates the roadmap on real demand — not internal assumptions."
+        hasSubsections: true,
+        subsections: [
+          {
+            heading: "Problem space mapping (ODI)",
+            content: "Before any ticket or roadmap, I map what users are trying to accomplish — in problem space, not solution space. Using Outcome-Driven Innovation (ODI), I build a solution-agnostic job map that captures intent, not behaviour."
+          },
+          {
+            heading: "Customer validation before POC",
+            content: "Before committing to a POC, I get on a customer call to validate the problem and test willingness to pay. A confirmed job-to-be-done only becomes a POC when a customer signals they'd pay for the solution. This gates the roadmap on real demand — not internal assumptions."
+          }
+        ]
       },
       {
         number: "02",
@@ -67,7 +77,17 @@ export const portfolioData = {
       {
         number: "04",
         title: "Own the problem, not just the backlog",
-        description: "I go directly to users, logs, and usage data to find where they're failing to achieve their goals — not just what they're requesting. I map the gap, layer in competitive analysis to understand what the market has and hasn't solved, and apply those insights based on where my product stands today. The backlog reflects the problem worth solving — backed by user reality and competitive context."
+        hasSubsections: true,
+        subsections: [
+          {
+            heading: "Direct to source",
+            content: "I go directly to users, logs, and usage data to find where they're failing to achieve their goals — not just what they're requesting. I map the gap between their current state and desired outcomes."
+          },
+          {
+            heading: "Layer in competitive analysis",
+            content: "I then layer in competitive analysis to understand what the market has and hasn't solved, and apply those insights based on where my product stands today. The backlog reflects the problem worth solving — backed by user reality and competitive context."
+          }
+        ]
       },
       {
         number: "05",
@@ -96,12 +116,33 @@ export const portfolioData = {
       {
         number: "06",
         title: "Use AI as leverage, not a shortcut",
-        description: "I use AI to move faster where it adds real value — drafting PRDs, surfacing patterns in usage data, generating IaC templates, modelling trade-off scenarios, and summarising feedback. But every prioritisation call, decision, and product narrative stays mine — explainable and accountable."
+        hasSubsections: true,
+        subsections: [
+          {
+            heading: "Where I use AI",
+            content: "I use AI to move faster where it adds real value — drafting PRDs, surfacing patterns in usage data, generating IaC templates, modelling trade-off scenarios, and summarising feedback."
+          },
+          {
+            heading: "What stays human",
+            content: "But every prioritisation call, decision, and product narrative stays mine — explainable and accountable. AI accelerates execution, but judgment and ownership remain non-negotiable."
+          }
+        ]
       },
       {
         number: "07",
         title: "Ship to learn, not to launch",
-        description: "A release is the starting point for real learning, not the finish line. After every sprint delivery, I close the loop — collect customer feedback, analyse what landed and what didn't, and feed those signals directly into the next sprint's priorities. Beyond feedback, I actively think about increasing the product's lifecycle in the client's environment — identifying where it can expand, deepen usage, or integrate further into existing workflows so it becomes indispensable over time. Learning velocity drives roadmap evolution more than launch cadence."
+        hasSubsections: true,
+        subsections: [
+          {
+            heading: "Close the feedback loop",
+            content: "A release is the starting point for real learning, not the finish line. After every sprint delivery, I close the loop — collect customer feedback, analyse what landed and what didn't, and feed those signals directly into the next sprint's priorities."
+          },
+          {
+            heading: "Expand product lifecycle",
+            content: "Beyond feedback, I actively think about increasing the product's lifecycle in the client's environment — identifying where it can expand, deepen usage, or integrate further into existing workflows so it becomes indispensable over time."
+          }
+        ],
+        closingStatement: "Learning velocity drives roadmap evolution more than launch cadence."
       }
     ]
   },
