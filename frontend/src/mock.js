@@ -72,7 +72,7 @@ export const portfolioData = {
       {
         number: "05",
         title: "Structure epics as capabilities, stories as vertical slices",
-        description: "I write epics as customer-deliverable capabilities — end-to-end, sprint-sized, and shippable to a user the moment they're complete. User stories go deeper — each one is a vertical slice covering all functional impact areas, independently testable by QA without waiting for other stories. Every sprint delivers working product, not just completed tasks."
+        description: "How I write epics: I write epics as customer-deliverable capabilities — end-to-end, sprint-sized, and shippable to a user the moment they're complete. Each epic covers the full product flow, not just a layer of it. It's capability-oriented, not feature-oriented. How I write user stories: User stories go one level deeper — each one is a vertical slice covering all functional impact areas needed to implement that behaviour end to end. A well-written story is independently testable by QA without waiting for other stories to be done. Before production — PO acceptance checklist: Before any epic reaches production, I run a PO acceptance checklist — an end-to-end capability test that validates the full flow meets production readiness criteria, not just individual story completion. After delivery — release notes and documentation: Once an epic ships, I write release notes for all features in it and update the product help documentation and FAQ — so the latest capability is always reflected in what users and support teams can reference. Every sprint delivers working product, documented, verified, and ready to use."
       },
       {
         number: "06",
