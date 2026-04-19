@@ -493,6 +493,37 @@ section {
   max-width: 800px;
 }
 
+.principle-subsection {
+  margin-bottom: var(--space-lg);
+}
+
+.subsection-heading {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--color-text);
+  font-family: var(--font-display);
+  margin-bottom: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+.subsection-content {
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  font-size: var(--text-base);
+  max-width: 800px;
+}
+
+.principle-closing {
+  color: var(--color-text);
+  line-height: 1.7;
+  font-size: var(--text-lg);
+  font-weight: 600;
+  max-width: 800px;
+  margin-top: var(--space-lg);
+  padding-left: var(--space-md);
+  border-left: 3px solid var(--color-primary);
+}
+
 .proof-grid {
   display: grid;
   grid-template-columns: 1fr;

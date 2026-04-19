@@ -268,7 +268,21 @@ const Portfolio = () => {
                   <span className="principle-number">{principle.number}</span>
                   <div className="principle-content">
                     <h3 className="principle-title">{principle.title}</h3>
-                    <p className="principle-desc">{principle.description}</p>
+                    {principle.hasSubsections ? (
+                      <>
+                        {principle.subsections.map((subsection, subIdx) => (
+                          <div key={subIdx} className="principle-subsection">
+                            <h4 className="subsection-heading">{subsection.heading}</h4>
+                            <p className="subsection-content">{subsection.content}</p>
+                          </div>
+                        ))}
+                        {principle.closingStatement && (
+                          <p className="principle-closing">{principle.closingStatement}</p>
+                        )}
+                      </>
+                    ) : (
+                      <p className="principle-desc">{principle.description}</p>
+                    )}
                   </div>
                 </div>
               ))}
